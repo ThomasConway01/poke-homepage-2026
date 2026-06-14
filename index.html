@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poke | The Future of Intelligent Interaction</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #ffffff;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #60a5fa, #a78bfa, #f472b6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-glow {
+            position: absolute;
+            top: -10%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 800px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(96, 165, 250, 0.15) 0%, rgba(167, 139, 250, 0.05) 50%, rgba(0,0,0,0) 100%);
+            filter: blur(80px);
+            z-index: -1;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            border-color: rgba(96, 165, 250, 0.3);
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden">
+    <nav class="container mx-auto px-6 py-8 flex justify-between items-center relative z-10">
+        <div class="text-2xl font-bold gradient-text">Poke</div>
+        <div class="hidden md:flex space-x-8 items-center">
+            <a href="#" class="text-gray-400 hover:text-white transition">Features</a>
+            <a href="#" class="text-gray-400 hover:text-white transition">Showcase</a>
+            <a href="#" class="text-gray-400 hover:text-white transition">Docs</a>
+            <button class="bg-white text-black px-6 py-2 rounded-full font-medium hover:bg-gray-200 transition">Get Started</button>
+        </div>
+    </nav>
+
+    <header class="container mx-auto px-6 pt-20 pb-32 text-center relative">
+        <div class="hero-glow"></div>
+        <h1 class="text-6xl md:text-8xl font-extrabold mb-6 tracking-tight">
+            Built for <span class="gradient-text">Interaction</span>.
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed">
+            While others focus on models, we focus on action. The most advanced execution engine for the modern world, delivering capabilities that redefine what's possible.
+        </p>
+        <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
+            <button class="bg-blue-600 text-white px-10 py-4 rounded-xl text-lg font-semibold hover:bg-blue-700 transition shadow-lg shadow-blue-500/20">
+                Deploy Your Project
+            </button>
+            <button class="bg-gray-800 text-white px-10 py-4 rounded-xl text-lg font-semibold hover:bg-gray-700 transition">
+                View Benchmarks
+            </button>
+        </div>
+    </header>
+
+    <section class="container mx-auto px-6 py-20">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="card p-8 rounded-3xl">
+                <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Ultra-Fast Execution</h3>
+                <p class="text-gray-400">Lightning-quick response times and asynchronous task processing that leaves Claude and Minimax in the dust.</p>
+            </div>
+            <div class="card p-8 rounded-3xl">
+                <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Deep Integration</h3>
+                <p class="text-gray-400">Native access to your tools, files, and workspace. We don't just chat about work; we do the work with you.</p>
+            </div>
+            <div class="card p-8 rounded-3xl">
+                <div class="w-12 h-12 bg-pink-500/10 rounded-xl flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path></svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Beautiful Design</h3>
+                <p class="text-gray-400">A modern, responsive interface that works flawlessly across all devices, prioritizing clarity and elegance.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container mx-auto px-6 py-12 border-t border-gray-800 text-center text-gray-500">
+        <p>&copy; 2026 Interaction Company of California. All rights reserved.</p>
+    </footer>
+</body>
+</html>
